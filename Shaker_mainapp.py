@@ -106,12 +106,16 @@ layout.addLayout(h_layout)
 
 
 # Creation du bouton com
-valOM1 = QComboBox()
-valOM1.addItems(OM1_list)
-valOM1.setCurrentText("Sélectionnez le port")
-valOM1.setStyleSheet("background-color: ChartThemeDark; color: white font-size: 18px;")
-#valOM1.setFixedHeight(40)
-layout.addWidget(valOM1)
+
+OM1 = QComboBox(window)
+valOM1 = OM1.currentText()
+OM1.addItem("Selectionnez le port")
+ports = serial.tools.list_ports.comports()
+OM1_list = []
+for p,d,h in sorted(ports):
+    OM1_list.append(p)
+OM1.setStyleSheet("background-color: ChartThemeDark; color: white font-size: 18px;")
+layout.addWidget(OM1)
 
 
 # Creation du bouton commencer
