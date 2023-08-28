@@ -239,7 +239,7 @@ def show_curve():
     series2.clear()
     series3.clear()
 
-    for i in range(0, 51, 10):
+    for i in range(0, 71, 5):
         x = round(random.uniform(-5, 5), 3)
         y = round(random.uniform(-5, 5), 3)
         z = round(random.uniform(-5, 5), 3)
@@ -257,8 +257,6 @@ def show_curve():
     if not timer.isActive():  # Démarre le timer si ce n'est pas déjà fait
         elapsed_time = QTime(0, 0, 0)
         timer.start()
-
-
 
 
 # Fonction qui enregistre l'image avec le nom entré
