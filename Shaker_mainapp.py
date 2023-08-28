@@ -78,7 +78,7 @@ axis_z_box.setFixedWidth(150)
 layout = QVBoxLayout()
 h_layout = QHBoxLayout()
 h_layout.addWidget(chartview, 4)
-spacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+spacer = QSpacerItem(40, 40, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 h_layout.addItem(spacer)
 
 
