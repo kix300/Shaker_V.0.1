@@ -9,4 +9,4 @@ can translate info from the gyroscope to an curve app
 
 
 # ATTENTION ! 
-J'ai pas fini le code avec tous les comments bg 
+normalement c'est pas trop mal 
